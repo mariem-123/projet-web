@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/quiz.css">
+
+</head>
+
+<body>
+    <header class ="header">
+        <a href="#home" class="logo">
+          <span>Mariem Hadj Salah</span>
+          <i class='bx bx-menu' id="menu-icon"></i>
+        </a>
+        <nav class="navbar">
+      
+              <a href="index.html">Accueil</a>
+              <a href="parcours.html">Parcours</a>
+              <a href="competences.html">Compétences</a>
+              <a href="stages.html">Stages</a>
+              <a href="evenements.html">Évènements</a>
+           
+              <a href="passions.html">Passions</a>
+              <a href="quiz.html">Quiz</a>
+              <a href="contact.html">Contact</a>
+            
+        </header>
+    <div class="start-screen">
+        <button id="start-button">Commencer</button>
+    </div>
+    <div id="display-container" class="hide">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 sur 10 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- les questions et options seront affichées ici -->
+        </div>
+        <button id="next-button">Suivant</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Score Démo</div>
+        <button id="restart">Redémarrer</button>
+    </div>
+
+    <script src="Js/quiz.js"></script>
+</body>
+
+</html>

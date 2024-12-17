@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Passions</title>
+    <link rel="stylesheet" href="css/passions.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            <span>Mariem Hadj Salah</span>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </a>
+        <nav class="navbar">
+
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html">Évènements</a>
+
+            <a href="passions.html">Passions</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="contact.html">Contact</a>
+
+    </header>
+    <div class="container">
+        <h1>Mes Passions</h1>
+
+        <div class="card" onclick="showDetails('passion1')">
+            <h2>Musique</h2>
+        </div>
+        <div class="card" onclick="showDetails('passion2')">
+            <h2>Lecture</h2>
+        </div>
+        <div class="card" onclick="showDetails('passion3')">
+            <h2>Dance</h2>
+        </div>
+        <div class="card" onclick="showDetails('passion4')">
+            <h2>cuisinier</h2>
+        </div>
+
+    </div>
+    <div id="details" class="details">
+        <span class="close" onclick="hideDetails()">&times;</span>
+        <p id="details-content"></p>
+    </div>
+    <script src="Js/passions.js"></script>
+</body>
+
+</html>

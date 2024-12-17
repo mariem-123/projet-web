@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">
+        <span>Mariem Hadj Salah</span>
+        <i class='bx bx-menu' id="menu-icon"></i>
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stages.html">Stages</a>
+        <a href="evenements.html">Évènements</a>
+        <a href="passions.html">Passions</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form class="contact-form" method="post" action="#">
+        <div class="input-area">
+          <input type="text" placeholder="Votre nom" required />
+        </div>
+        <div class="input-area">
+          <input type="email" placeholder="Adresse e-mail" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+          <small>Veuillez entrer une adresse email valide.</small>
+        </div>
+        <div class="input-area">
+          <input type="text" placeholder="Objet" required />
+        </div>
+        <div class="input-area h-80">
+          <textarea placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit" class="sendbtn">Envoyer</button>
+      </form>
+    </div>
+
+    <div class="social-container">
+      <div class="custom-social-container">
+        <p>Contactez-moi sur</p>
+        <button class="cross-btn"><i class="fas fa-times"></i></button>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="nofollow">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="nofollow">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a href="https://linkedin.com/in/farazc60" target="_blank" rel="nofollow">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="connect-btn">Contactez-moi </button>
+    <script src="Js/contact.js"></script>
+  </body>
+</html>

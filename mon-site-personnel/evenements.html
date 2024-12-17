@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Événements et Clubs</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --bg-color: #080808;
+            --second-bg-color: #101010;
+            --text-color: white;
+            --main-color: #ea119b;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 3rem 9%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: var(--text-color);
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .logo span {
+            text-shadow: 0 0 25px var(--main-color);
+        }
+
+        .navbar a {
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 1rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: var(--main-color);
+            border-bottom: 3px solid var(--main-color);
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 800px;
+            margin: 10rem auto 2rem;
+            padding: 1rem;
+            background-color: #101010;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--main-color);
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #0a0a0a;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        li img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 1rem;
+            border-radius: 5px;
+        }
+
+        li:hover {
+            background-color: #1a1a1a;
+        }
+
+        span {
+            color: var(--main-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            <span>Mariem Hadj Salah</span>
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="stages.html">Stages</a>
+            <a href="evenements.html" class="active">Évènements</a>
+            <a href="passions.html">Passions</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="evenements">
+            <h2>Événements</h2>
+            <ul>
+                <li>
+                    <img src="images/python  (1).jpg" alt="python ">
+                    <span>2021 - AI Through Python.</span>
+                </li>
+                <li>
+                    <img src="images/Area01.jpg" alt="Area">
+                    <span>2022 - Hackathon et récompense pour le meilleur projet.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="clubs">
+            <h2>Club</h2>
+            <ul>
+                <li>
+                    <img src="images/club.jpg" alt="Club ">
+                    <img src="images/ji.jpg" alt="Club ">
+                    <span>MTC IPSAS (2021-2022) Responsable Ressources Humaines (Gestion de la ressource humaine - organisation des évènements et des formations)</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

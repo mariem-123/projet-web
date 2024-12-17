@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins",sans-serif;
+}
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#101010;
+    --text-color:white;
+    --main-color:#ea119b;
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+body{
+    background :var(--bg-color);
+    color: var(--text-color);
+    
+}
+.header{
+    position :fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:3rem 9%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 100px; /* Déplace le header plus bas de 100px */
+    left: 0;
+    text-align: center;
+       
+    }
+
+
+  h1 {
+    font-size: 4em; /* Rend le texte plus grand */
+    margin: 2; /* Supprime les marges par défaut */
+    line-height: 1.2; /* Réduit l'espacement vertical */
+    font-weight: bold;
+    white-space: nowrap; 
+    margin-left: 15px;
+}
+  
+  /* Section des compétences */
+ /* Section des compétences */
+.competences {
+    display: flex; /* Active le mode de mise en page flexible */
+    flex-wrap: wrap; /* Permet aux boîtes de se déplacer sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre les boîtes horizontalement */
+    align-items: center; /* Centre les boîtes verticalement (optionnel, utile pour plusieurs lignes) */
+    padding: 40px;
+    gap: 60px; /* Espacement entre les boîtes */
+}
+
+/* Boîtes individuelles */
+.competence {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 10px 20px; /* Réduit l'espacement interne vertical et horizontal */
+    width: 280px; /* Largeur de chaque boîte */
+    height: 180px; /* Hauteur fixée pour chaque boîte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex; /* Utilisation du flexbox pour centrer le contenu à l'intérieur de la boîte */
+    flex-direction: column; /* Aligne le contenu verticalement */
+    justify-content: center; /* Centre verticalement le contenu à l'intérieur de la boîte */
+    text-align: center; /* Centre le texte à l'intérieur de chaque boîte */
+}
+
+
+  
+  .competence:hover {
+    transform: scale(1.05);
+  }
+  
+  .competence h2 {
+    font-size: 1.6em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  
+  .competence p {
+    font-size: 2em;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 300;  */
+    text-align: justify;
+    line-height: 1.8;
+    
+  }
